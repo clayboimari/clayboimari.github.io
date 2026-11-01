@@ -217,27 +217,27 @@
   }
 
   function createShareButton(post) {
-    const btn = el('button', 'share-btn', 'share');
-    btn.type = 'button';
-    btn.addEventListener('click', async () => {
-      const url = location.href.split('#')[0] + '#' + post.id;
-      if (navigator.share) {
-        try {
-          await navigator.share({ title: document.title, url });
-          return;
-        } catch (err) {
-          if (err && err.name === 'AbortError') return;
-        }
-      }
+  const btn = el('button', 'share-btn', 'share');
+  btn.type = 'button';
+  btn.addEventListener('click', async () => {
+    const url = location.href.split('#')[0] + '#' + post.id;
+    if (navigator.share) {
       try {
-        await navigator.clipboard.writeText(url);
-        toast('link copied');
+        await navigator.share({ title: document.title, url });
+        return;
       } catch (err) {
-        toast(url);
+        if (err?.name === 'AbortError') return;
       }
-    });
-    return btn;
-  }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      toast('link copied');
+    } catch {
+      toast(url);
+    }
+  });
+  return btn;
+}
 
   function createPostElement(post) {
     const article = el('article', 'post');
@@ -316,7 +316,7 @@
       subscribeForm.reset();
       closeSubscribe();
       toast("you're on the list");
-    } catch (err) {
+    } catch {
       toast('something went wrong, try again');
     }
   });
