@@ -1,4 +1,4 @@
-window.POSTS = [
+globalThis.POSTS = [
   {
     id: 'p-01',
     type: 'photo',
