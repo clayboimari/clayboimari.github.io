@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco Angie</title>
+  <meta name="description" content="A living archive.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon-32x32.png">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site">
+    <div class="topbar">
+      <a class="wordmark" href="#">Marco Angie</a>
+      <!-- <div class="topbar-right">
+        <button type="button" class="nav-link" id="subscribeLink">Subscribe</button>
+      </div> -->
+    </div>
+
+    <nav class="nav" aria-label="Site">
+      <a href="about.html" class="nav-item">&nbsp;about&nbsp;</a>
+      <a href="projects.html" class="nav-item">projects</a>
+      <a href="index.html" class="nav-item nav-blank" aria-label="Home" title="home"><span class="blank-box"></span></a>
+      <a href="art sux.html" class="nav-item">art sux</a>
+      <a href="network.html" class="nav-item">network</a>
+      <div class="topbar-right">
+        <button type="button" class="nav-link" id="subscribeLink">Subscribe</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Time, centered below the header -->
+  <div class="clock-row">
+    <span class="clock" id="clock"><span id="clockDate"></span> 
+    <span id="clockTime"></span></span>
+  </div>
+
+  <!-- ============ LAYOUT: filters (left) + centered feed ============ -->
+  <div class="layout">
+    <aside class="sidebar" aria-label="Filter posts">
+      <ul class="filter-list" id="filterList"></ul>
+    </aside>
+
+    <main class="feed" id="feed"></main>
+  </div>
+
+  <!-- ============ FOOTER ============
+  <footer class="site-footer">
+    <p class="footer-line">© 2026</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer> -->
+
+  <!-- ============ SUBSCRIBE ============ -->
+  <div class="subscribe-modal" id="subscribeModal" hidden>
+    <div class="subscribe-inner">
+      <button type="button" class="subscribe-close" id="subscribeClose" aria-label="Close">&times;</button>
+      <p class="subscribe-title">Subscribe</p>
+      <p class="subscribe-sub">New work, as it happens.</p>
+      <form id="subscribeForm" class="subscribe-form">
+        <input type="email" name="email" placeholder="email address" required>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+  <noscript>
+    <p class="noscript">This page needs JavaScript to show posts.</p>
+  </noscript>
+
+  <script src="posts.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
