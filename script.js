@@ -13,8 +13,8 @@
     return node;
   }
 
-  // Posts come from posts.js (window.POSTS)
-  const POSTS = Array.isArray(window.POSTS) ? window.POSTS : [];
+  // Posts come from posts.js (globalThis.POSTS)
+  const POSTS = Array.isArray(globalThis.POSTS) ? globalThis.POSTS : [];
 
   const PLAY_SVG  = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
   const PAUSE_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>';
