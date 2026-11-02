@@ -12,7 +12,7 @@ globalThis.POSTS = [
     date: '2026-9-21',
     time: '10:39 PM',
     title: 'Experimental Beat',
-    media: 'experimentalbeat_4.m4a',
+    media: 'experimentalbeat_4.wav',
     duration: '1:42'   
   },
   {
