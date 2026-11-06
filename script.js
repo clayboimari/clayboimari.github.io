@@ -37,6 +37,15 @@
     toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2200);
   }
 
+function createHeader() {
+  const header = document.createElement('header');
+  header.className = 'header';
+  const img = document.createElement('img');
+  img.src = 'Bandcamp_Banner.png';
+  img.style.cssText = 'display:block;width:100%;height:100%;object-fit:cover';
+}
+  
+
   /* ==========================================================
      Clock (header)
      ========================================================== */
@@ -46,7 +55,7 @@
   function tickClock() {
     const now = new Date();
     clockDate.textContent = now.toLocaleDateString('en-US', {
-      month: 'short', day: 'numeric', year: 'numeric'
+      month: 'numeric', day: 'numeric', year: 'numeric'
     });
     clockTime.textContent = now.toLocaleTimeString('en-US', {
       hour: '2-digit', minute: '2-digit'
@@ -62,7 +71,7 @@
     { key: 'photo', label: 'photo' },
     { key: 'video', label: 'video' },
     { key: 'audio', label: 'audio' },
-    { key: 'text',  label: 'notes' }
+    { key: 'text',  label: 'text' }
   ];
 
   function renderFilters() {
