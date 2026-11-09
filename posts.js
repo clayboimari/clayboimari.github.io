@@ -15,20 +15,20 @@ globalThis.POSTS = [
     media: 'experimentalbeat_4.m4a',
     duration: '1:42'   
   },
-  {
-   id: 'p-02',
-    type: 'video',
-    date: '2026-10-06',
-    time: '01:15 AM',
-    caption: 'Studio, last night.',
-    media: 'media/p-02.mp4',
-    duration: '1:18'
-  },
-  {
-    id: 'p-04',
-    type: 'text',
-    date: '2026-09-25',
-    time: '06:32 PM',
-    body: 'Nothing is finished. That feels right.'
-  },
+  // {
+  //  id: 'p-02',
+  //   type: 'video',
+  //   date: '2026-10-06',
+  //   time: '01:15 AM',
+  //   caption: 'Studio, last night.',
+  //   media: 'media/p-02.mp4',
+  //   duration: '1:18'
+//   },
+//   {
+//     id: 'p-04',
+//     type: 'text',
+//     date: '2026-09-25',
+//     time: '06:32 PM',
+//     body: 'Nothing is finished. That feels right.'
+//   },
 ];

@@ -37,13 +37,13 @@
     toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2200);
   }
 
-function createHeader() {
-  const header = document.createElement('header');
-  header.className = 'header';
-  const img = document.createElement('img');
-  img.src = 'Bandcamp_Banner.png';
-  img.style.cssText = 'display:block;width:100%;height:100%;object-fit:cover';
-}
+// function createHeader() {
+//   const header = document.createElement('header');
+//   header.className = 'header';
+//   const img = document.createElement('img');
+//   img.src = 'Bandcamp_Banner.png';
+//   img.style.cssText = 'display:block;width:100%;height:100%;object-fit:cover';
+// }
   
 
   /* ==========================================================
