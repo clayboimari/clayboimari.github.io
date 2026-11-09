@@ -4,7 +4,7 @@ globalThis.POSTS = [
     type: 'photo',
     date: '2024-05-26',
     time: '11:53 PM',
-    media: '9100C49F-C5A6-4555-B08A-55A62D800C3C.JPEG'
+    media: 'MEDIA/PHOTO-4262024.JPEG'
   },
   {
         id: 'p-03',
@@ -12,7 +12,7 @@ globalThis.POSTS = [
     date: '2026-9-21',
     time: '10:39 PM',
     title: 'Experimental Beat',
-    media: 'experimentalbeat_4.m4a',
+    media: 'MEDIA/AUDIO-experimentalbeat.m4a',
     duration: '1:42'   
   },
   // {
