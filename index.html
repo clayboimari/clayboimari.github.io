@@ -11,7 +11,8 @@
 <body>
 
   <!----------HEADER---------->
-  <header class="site">
+  <header class="site" style="position: relative;">
+    <img src="MEDIA/BANNER-DISK.gif" alt="" width="100" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
     <div class="header"></div>
   </header>
 
@@ -41,8 +42,11 @@
       fetchpriority="high">
   </section>
 
-  <!----------FEED+FILTERS---------->
+  <div class="barrier">
+    </nav>
+  </div>
 
+  <!----------FEED+FILTERS---------->
   <div class="feed-row">FEED</div>
   
   <div class="layout">
@@ -55,20 +59,20 @@
 
   <!----------FOOTER---------->
   <footer class="site-footer">
-    <p class="footer-line">© 2026</p>
+    <p class="footer-line">©ARTSUX 2026</p>
     <div class="footer-links">
       <a href="#">Instagram</a>
       <a href="#">YouTube</a>
-      <a href="#">Contact</a>
+      <a href="reach.html">Reach</a>
     </div>
   </footer>
 
-  <!----------SUBSCRIBE---------->
+  <!----------SUBSCRIBE-BACKEND---------->
   <div class="subscribe-modal" id="subscribeModal" hidden>
     <div class="subscribe-inner">
       <button type="button" class="subscribe-close" id="subscribeClose" aria-label="Close">&times;</button>
       <p class="subscribe-title">Subscribe</p>
-      <p class="subscribe-sub">New work, as it happens.</p>
+      <p class="subscribe-sub">Newsletter</p>
       <form id="subscribeForm" class="subscribe-form">
         <input type="email" name="email" placeholder="email address" required>
         <button type="submit">Sign up</button>
@@ -76,6 +80,7 @@
     </div>
   </div>
 
+<!----->
   <noscript>
     <p class="noscript">This page needs JavaScript to show posts.</p>
   </noscript>

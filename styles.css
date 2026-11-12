@@ -189,6 +189,15 @@ a { color: inherit; text-decoration: none; }
   padding-top: 20px;
 }
 
+.barrier {
+  padding: 0px var(--pad) 10px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 0px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
 .landing {
   width: 100%;
   height: 50%;
@@ -261,8 +270,8 @@ a { color: inherit; text-decoration: none; }
   padding: 0px var(--pad) 10px;
   text-align: center;
   position: relative;
-  padding-bottom: 20px;
-  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-top: 10px;
   font-size: 1.5rem;
 }
 
@@ -394,7 +403,7 @@ a { color: inherit; text-decoration: none; }
    Footer
    ========================================================== */
 .site-footer {
-  border-top: var(--line);
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
   padding: 32px var(--pad);
   display: flex;
   align-items: center;
